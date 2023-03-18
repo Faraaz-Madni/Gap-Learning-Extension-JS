@@ -11,5 +11,10 @@
     "browser_action": {
         "default_icon": "public/icons/icon48.png",
         "default_popup": "public/popup.html"
-    }
+    },
+    "background": {
+        "scripts": ["src/clock.js"],
+        "persistent": true
+      },
+    "content_security_policy": "script-src 'self' https://cdn.skypack.dev; object-src 'self'"
 }
