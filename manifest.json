@@ -1,6 +1,12 @@
 {
     "manifest_version": 3,
-    "name": "CRXJS React Vite Example",
+    "name": "Gap Learning Productivity Extension",
     "version": "1.0.0",
+    "description": "A browser extension aimed at increasing your productivty through gap learning.",
+    "icons": {
+      "128": "public/icons/icon48.png",
+      "48": "public/icons/icon48.png",
+      "16": "public/icons/icon48.png"
+    },
     "action": { "default_popup": "index.html" }
   }
