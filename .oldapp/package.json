@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "dayjs": "^1.11.7",
+    "tailwindcss": "^3.2.7"
+  },
+  "name": "gaplearningwithjs",
+  "version": "1.0.0",
+  "main": "clock.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
