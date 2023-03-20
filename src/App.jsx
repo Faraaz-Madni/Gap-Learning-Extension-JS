@@ -1,9 +1,21 @@
 import { useState } from 'react'
 import './index.css'
+import dayjs from 'dayjs'
 
+//DayJS variables
+var timeNow = dayjs();
+// console.log(timeNow.$d);
+
+var timeThen = timeNow.add(31, "minutes");
+// console.log(timeThen.$d);
+
+var timeDifference = timeThen.subtract(timeNow);
+// console.log(timeDifference.$d);
 
 function App() {
   const [count, setCount] = useState(0)
+  const button = document.getElementById('minutes_submit');
+
 
   return (
   <>
@@ -15,7 +27,7 @@ function App() {
     <div className="grid grid-cols-2 place-items-center ">
 
         <span className="text-3xl font-bold rounded-md min-h-min max-h-40 px-10 grid grid-rows-1 place-items-center marquee shadow shadow-blue-500/40 hover:shadow-indigo-500/40" >
-          
+
         </span>
         
         <div className="rounded-md content-center p-5 my-5">
@@ -57,3 +69,4 @@ function App() {
 }
 
 export default App
+
